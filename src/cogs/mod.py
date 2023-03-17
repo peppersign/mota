@@ -11,8 +11,9 @@ class mod(commands.Cog):
 
     
     @commands.command()
-    async def modtest(self, ctx):
-        ctx.send("mod test xd")
+    @commands.has_permissions(kick_members=True)
+    async def mute(self, ctx, member: discord.Member, time):
+        await ctx.send("mod test xd")
 
             
 def setup(bot):

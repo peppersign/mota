@@ -13,7 +13,8 @@ intents.members = True
 mota = commands.Bot(command_prefix='.', intents=intents, help_command=None)
 
 extensions = [
-        "cogs.default"
+        "cogs.default",
+        "cogs.mod"
 ]
 
 
